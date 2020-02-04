@@ -52,9 +52,12 @@ class LoginPage extends StatelessWidget {
                 SizedBox(height: 30.0),
                 _crearPassword(),
                 SizedBox(height: 30.0),
+                _crearBoton()
               ],
             ),
-          )
+          ),
+          Text('¿Olvido la contraseña?'),
+          SizedBox(height: 100.0,)
         ],
       ),
     );
@@ -90,8 +93,18 @@ class LoginPage extends StatelessWidget {
 
   Widget _crearBoton() {
     return RaisedButton(
-      
-    )
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 15.0),
+        child: Text('Ingresar'),
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5.0)
+      ),
+      elevation: 0.0,
+      color: Colors.deepPurple,
+      textColor: Colors.white,
+      onPressed: () {},
+    );
   }
 
   Widget _crearFondo(BuildContext context) {
